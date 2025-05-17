@@ -1,0 +1,131 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: #F3F3F3;
+    padding: 20px 80px;
+    height: 70px;
+    border-bottom: 1px solid #bdbbbb;
+    position: relative;
+}
+.header-logo{
+    flex: 3;
+}
+.header-items{
+    flex: 4;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 14px;
+}
+.header-items span{
+    font-weight: 500;
+    cursor: pointer;
+    color: #777777;
+}
+.header-icons {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    color: #777777;
+}
+.header-icons div{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-logo h3{
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    font-size: 25px;
+}
+.header-icons{
+display: flex;
+}
+
+.header-iconsmenu{
+    display: none !important;
+}
+
+@media(max-width : 960px){
+    .header{
+    padding: 20px 40px;
+}
+   .header-items{
+    display: none !important;
+} 
+.header-iconsSearch{
+    display: none !important;
+}
+.header-iconsmenu{
+     width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+}
+
+@media(max-width : 660px){
+    .header{
+    padding: 20px 20px;
+}
+.header-logo h3{
+    font-size: 20px;
+}
+.header-icons {
+    font-size: 13px;
+}
+.header-icons div{
+    width: 30px;
+    height: 30px;
+}
+}
+
+.header-dropDown{
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 71px;
+    padding: 10px 20px;
+    background: #777777;
+    border-radius: 5px;
+}
+.header-dropDownUl{
+    font-size: 14px; 
+}
+.header-dropDownUl li{
+   list-style: none;
+   cursor: pointer;
+   padding: 5px;
+   color: #fff;
+   font-weight: 400;
+}
+
+@media(max-width : 960px){
+.header-dropDown{
+    display: block;
+    z-index: 1000;
+    right: 40px;
+}
+}
+
+@media(max-width : 460px){
+.header-dropDown{
+    display: block;
+    z-index: 1000;
+    right: 10px;
+}
+}
